@@ -33,3 +33,7 @@ https://github.com/apollographql/apollo-tooling
 ### react-helmet. document의 타이틀을 바꿀수 있게 해줌
 
 npm i react-helmet
+
+### react 전용 font-awesome
+
+https://fontawesome.com/how-to-use/on-the-web/using-with/react
