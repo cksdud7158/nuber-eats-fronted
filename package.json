@@ -15,7 +15,9 @@
     "@types/react": "^17.0.2",
     "@types/react-dom": "^17.0.1",
     "apollo": "^2.32.1",
+    "cypress": "^6.5.0",
     "graphql": "^15.5.0",
+    "multer": "^1.4.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
@@ -28,10 +30,11 @@
   },
   "scripts": {
     "tailwind:build": "tailwind build ./src/styles/tailwind.css -o ./src/styles/styles.css",
-    "apollo:codegen": "rm -rf src/__generated__ && apollo client:codegen src/__generated__ --target=typescript --outputFlat",
     "start": "npm run apollo:codegen & npm run tailwind:build & react-scripts start",
+    "apollo:codegen": " rimraf src/__generated__ && apollo client:codegen src/__generated__ --target=typescript --outputFlat",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:coverage": "npm test -- --coverage --watchAll=false",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -52,8 +55,15 @@
       "last 1 safari version"
     ]
   },
+  "jest": {
+    "collectCoverageFrom": [
+      "./src/components/**/*.tsx",
+      "./src/pages/**/*.tsx",
+      "./src/routers/**/*.tsx"
+    ]
+  },
   "devDependencies": {
-    "@types/react-helmet": "^6.1.0",
+    "@testing-library/cypress": "^7.0.4",
     "@types/react-router-dom": "^5.1.7",
     "autoprefixer": "^10.2.4",
     "postcss": "^8.2.6",
