@@ -37,3 +37,12 @@ npm i react-helmet
 ### react 전용 font-awesome
 
 https://fontawesome.com/how-to-use/on-the-web/using-with/react
+
+### 프론트엔드 테스트 도구
+
+npm install cypress
+
+### Cypress Testing Library
+
+https://testing-library.com/docs/cypress-testing-library/intro/
+npm install --save-dev cypress @testing-library/cypress
