@@ -46,3 +46,7 @@ npm install cypress
 
 https://testing-library.com/docs/cypress-testing-library/intro/
 npm install --save-dev cypress @testing-library/cypress
+
+### 리액트에서 그래프를 사용할 수 있게해주는 패키지
+
+https://formidable.com/open-source/victory/
