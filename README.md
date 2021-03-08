@@ -50,3 +50,15 @@ npm install --save-dev cypress @testing-library/cypress
 ### 리액트에서 그래프를 사용할 수 있게해주는 패키지
 
 https://formidable.com/open-source/victory/
+
+### subscription 을 위해 apollo client 에서 패키지를 설치해야함
+
+https://www.apollographql.com/docs/react/data/subscriptions/#gatsby-focus-wrapper
+
+### 리액트 컴포넌트로 google Map을 사용할 수 있게해주는 라이브러리
+
+https://www.npmjs.com/package/google-map-react
+
+### 구글 맵스 Typescript 사용하는 법
+
+npm i -D @types/googlemaps
